@@ -13,7 +13,6 @@ function valueInput() {
     displayTarefas()
 }
 
-
 function cancelar(){
     input.value = ''
 }
@@ -31,6 +30,10 @@ function displayTarefas() {
 listLoaded.innerHTML = novaLi
 
 }
+
+listLoaded.addEventListener('click', function(e){
+    e.target.classList.toggle('concluido')
+})
 
 butadd.addEventListener('click', valueInput)
 butcancel.addEventListener('click', cancelar)

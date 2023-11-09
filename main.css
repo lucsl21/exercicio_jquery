@@ -76,6 +76,6 @@ button {
     color: black;
 }
 
-.task:active {
-    text-decoration: line-through
+.concluido {
+    text-decoration: line-through;
 }
